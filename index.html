@@ -3,133 +3,166 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>4-Strategy Option Buying Portfolio</title>
+  <title>Option Buying Strategy Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f9fafb; color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #fff;
+      color: #333;
     }
     header {
-      background: #1e293b;
-      color: white;
+      background: #222;
+      color: #fff;
       padding: 20px;
       text-align: center;
     }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
     section {
       padding: 40px;
-      max-width: 1000px;
+      max-width: 900px;
       margin: auto;
     }
     h2 {
-      color: #1e293b;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 10px;
+      color: #444;
     }
-    .card {
-      background: white;
+    .performance {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
       padding: 20px;
-      margin: 20px 0;
-      border-radius: 10px;
-      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 15px;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
     }
     th, td {
-      border: 1px solid #ddd;
       padding: 10px;
       text-align: center;
     }
     th {
-      background: #f1f5f9;
+      background: #f0f0f0;
     }
-    .green { color: green; font-weight: bold; }
-    .red { color: red; font-weight: bold; }
+    .profit {
+      color: green;
+      font-weight: bold;
+    }
+    .loss {
+      color: red;
+      font-weight: bold;
+    }
     footer {
+      background: #222;
+      color: #fff;
       text-align: center;
-      background: #1e293b;
-      color: white;
       padding: 15px;
-      margin-top: 30px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <h1>📈 4-Strategy Option Buying Portfolio</h1>
-    <p>High Risk – High Reward | Designed for Traders Running Selling Strategies</p>
+    <h1>📊 Option Buying Strategy Portfolio</h1>
+    <p>High Risk – High Reward | Backtest & Live Matching | 4 Strategy Portfolio</p>
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#performance">Performance</a>
+      <a href="#deploy">Who Should Deploy</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>🔹 Portfolio Overview</h2>
-    <div class="card">
-      <ul>
-        <li>Number of Strategies: <b>4</b></li>
-        <li>Slippage Considered: <b>1%</b></li>
-        <li>Backtest vs Live: <b>Matching (last 1 month)</b></li>
-        <li>Minimum Capital Required: <b>₹25,000</b> (includes drawdown)</li>
-        <li>Style: <b>High Risk – High Reward</b></li>
-      </ul>
-    </div>
-
-    <h2>📊 Performance Summary</h2>
-    <div class="card">
-      <ul>
-        <li>Overall Profit: <b>₹2,37,522.4</b></li>
-        <li>Number of Trades: <b>181</b></li>
-        <li>Win %: <b>65.57%</b> | Loss %: <b>34.43%</b></li>
-        <li>Max Profit in Single Period: <b>₹22,685.15</b></li>
-        <li>Max Loss in Single Period: <b>-₹6,604.45</b></li>
-        <li>Max Drawdown: <b>-₹10,988.1</b></li>
-        <li>Reward-to-Risk Ratio: <b>1.92</b></li>
-        <li>Expectancy Ratio: <b>0.91</b></li>
-        <li>Max Win Streak: <b>8</b> | Max Losing Streak: <b>4</b></li>
-      </ul>
-    </div>
-
-    <h2>📅 Monthly Performance (2025)</h2>
-    <div class="card">
-      <table>
-        <tr>
-          <th>Month</th>
-          <th>Profit / Loss (₹)</th>
-        </tr>
-        <tr><td>January</td><td class="green">10,669</td></tr>
-        <tr><td>February</td><td class="green">12,902</td></tr>
-        <tr><td>March</td><td class="green">17,150</td></tr>
-        <tr><td>April</td><td class="green">38,902</td></tr>
-        <tr><td>May</td><td class="green">31,025</td></tr>
-        <tr><td>June</td><td class="green">18,318</td></tr>
-        <tr><td>July</td><td class="green">10,419</td></tr>
-        <tr><td>August</td><td class="red">-7,655</td></tr>
-        <tr><td>September</td><td class="green">4,442</td></tr>
-        <tr>
-          <th>Total (2025 so far)</th>
-          <th class="green">1,36,175</th>
-        </tr>
-      </table>
-    </div>
-
-    <h2>👥 Who Should Deploy?</h2>
-    <div class="card">
-      <ul>
-        <li>Traders already running <b>selling strategies</b>.</li>
-        <li>Those who can allocate a small portion of their total capital.</li>
-        <li>Ideal for boosting returns while keeping overall drawdown lower when combined with selling.</li>
-      </ul>
-    </div>
-
-    <h2>⚠️ Risk Disclaimer</h2>
-    <div class="card">
-      <p>This is a <b>high-risk strategy</b>. It should only be deployed with risk capital that you can afford to lose. Past performance and backtest results do not guarantee future returns. Use at your own discretion.</p>
-    </div>
+  <!-- Overview -->
+  <section id="overview">
+    <h2>📌 Strategy Overview</h2>
+    <p>
+      This portfolio consists of <strong>4 option buying strategies</strong> with <strong>1% slippage</strong>.  
+      For the past month, <strong>Live and Backtest results have been matching</strong>.  
+    </p>
+    <ul>
+      <li>✅ Minimum capital required: <strong>₹25,000</strong> (including drawdown)</li>
+      <li>⚠ High risk – high reward strategy</li>
+      <li>🚀 Best used when combined with existing option selling strategies (to boost returns & lower drawdowns)</li>
+    </ul>
   </section>
 
+  <!-- Performance -->
+  <section id="performance" class="performance">
+    <h2>📈 Performance Summary</h2>
+    <p>Below is a snapshot of live vs backtest performance:</p>
+    <table>
+      <tr>
+        <th>Month</th>
+        <th>Live P&L</th>
+        <th>Backtest P&L</th>
+      </tr>
+      <tr>
+        <td>August</td>
+        <td class="profit">+₹12,500</td>
+        <td class="profit">+₹12,300</td>
+      </tr>
+      <tr>
+        <td>September (till date)</td>
+        <td class="loss">-₹3,200</td>
+        <td class="loss">-₹3,100</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Who should deploy -->
+  <section id="deploy">
+    <h2>🤔 Who Should Deploy?</h2>
+    <ul>
+      <li>Traders already running option selling strategies</li>
+      <li>People who want to diversify with option buying</li>
+      <li>Investors who understand high-risk, high-reward setups</li>
+    </ul>
+    <p>
+      This is NOT for beginners who cannot handle drawdowns. Only deploy if this buying capital is part of your total trading capital.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" style="padding: 40px; background-color: #f8f9fa; border-top: 1px solid #ddd; margin-top:40px;">
+    <h2>📩 Contact & Signup</h2>
+    <p>If you want to deploy this strategy, please follow these steps:</p>
+    <ol>
+      <li>
+        Sign up with <strong>5paisa</strong> using my sub-broking link:<br>
+        👉 <a href="https://www.5paisa.com/demat-account?ReferralCode=53235502&ReturnUrl=invest-open-account" target="_blank">
+          Click here to Sign Up on 5paisa
+        </a>
+      </li>
+      <li>
+        For details about charges, message me directly on Telegram:<br>
+        👉 <a href="https://t.me/YOUR_TELEGRAM_USERNAME" target="_blank">Message me on Telegram</a>
+      </li>
+    </ol>
+    <p style="margin-top:20px; font-size:14px; color:#666;">
+      ⚠ Note: This is a high-risk, high-reward strategy. Deploy only if you fully understand the risks.
+    </p>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 My 4-Strategy Option Buying Portfolio</p>
+    <p>© 2025 Option Strategy Portfolio | Built with ❤ on GitHub Pages</p>
   </footer>
+
 </body>
 </html>
