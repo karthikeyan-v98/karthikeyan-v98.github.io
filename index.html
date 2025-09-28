@@ -16,7 +16,7 @@
       --border-color: #334155;
       --shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     }
-    body { font-family: 'Inter', sans-serif; background: var(--dark-bg); color: var(--text-primary); line-height: 1.6; }
+    body { font-family: 'Inter', sans-serif; background: var(--dark-bg); color: var(--text-primary); line-height: 1.6; margin:0; padding:0; }
     .container { max-width: 1400px; margin: 0 auto; padding: 0 20px; }
 
     /* Header */
@@ -56,7 +56,7 @@
     .stat-value { font-weight: bold; font-size: 1.1rem; }
 
     /* Contact */
-    .contact-section { background: var(--card-bg); border-radius: 20px; padding: 50px; text-align: center; box-shadow: var(--shadow); border: 1px solid var(--border-color); position: relative; overflow: hidden; }
+    .contact-section { background: var(--card-bg); border-radius: 20px; padding: 50px; text-align: center; box-shadow: var(--shadow); border: 1px solid var(--border-color); overflow: hidden; }
     .contact-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
     .step-card { background: rgba(15, 23, 42, 0.8); padding: 30px; border-radius: 15px; border: 1px solid var(--border-color); position: relative; }
     .step-number { position: absolute; top: -15px; left: 30px; background: var(--primary-gradient); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; }
@@ -119,107 +119,4 @@
     <section id="stats" class="section">
       <h2 class="section-title">Detailed Statistics</h2>
       <div class="stats-grid">
-        <div class="stat-card"><div class="stat-label">Average Profit per Period</div><div class="stat-value">₹1,946.9</div></div>
-        <div class="stat-card"><div class="stat-label">Average Profit on Winning Periods</div><div class="stat-value">₹4,087.11</div></div>
-        <div class="stat-card"><div class="stat-label">Average Loss on Losing Periods</div><div class="stat-value loss">-₹2,129.69</div></div>
-        <div class="stat-card"><div class="stat-label">Max Profit in Single Period</div><div class="stat-value">₹22,685.15</div></div>
-        <div class="stat-card"><div class="stat-label">Max Loss in Single Period</div><div class="stat-value loss">-₹6,604.45</div></div>
-        <div class="stat-card"><div class="stat-label">Return / MaxDD</div><div class="stat-value">22.04</div></div>
-        <div class="stat-card"><div class="stat-label">Reward to Risk Ratio</div><div class="stat-value">1.92</div></div>
-        <div class="stat-card"><div class="stat-label">Expectancy Ratio</div><div class="stat-value">0.91</div></div>
-        <div class="stat-card"><div class="stat-label">Max Win Streak</div><div class="stat-value">8</div></div>
-        <div class="stat-card"><div class="stat-label">Max Losing Streak</div><div class="stat-value">4</div></div>
-        <div class="stat-card"><div class="stat-label">Max Days in Drawdown</div><div class="stat-value">8</div></div>
-      </div>
-    </section>
-
-    <!-- Who Should Deploy -->
-    <section id="deploy" class="section">
-      <h2 class="section-title">Who Should Deploy?</h2>
-      <div class="cards-grid">
-        <div class="card"><i class="fas fa-user-tie card-icon"></i><h3 class="card-title">Experienced Option Traders</h3><p>For traders already running option selling strategies.</p></div>
-        <div class="card"><i class="fas fa-chart-pie card-icon"></i><h3 class="card-title">Portfolio Diversifiers</h3><p>For investors who want to diversify with option buying.</p></div>
-        <div class="card"><i class="fas fa-shield-alt card-icon"></i><h3 class="card-title">Risk-Aware Investors</h3><p>For those who understand and can handle drawdowns.</p></div>
-      </div>
-      <div class="warning-box"><i class="fas fa-exclamation-triangle warning-icon"></i><div><strong>Important:</strong> This strategy is NOT for beginners. Only deploy if buying capital is part of total trading capital.</div></div>
-    </section>
-
- <!-- Contact Section -->
-<section id="contact" class="section">
-  <div class="contact-section">
-    <h2 class="section-title">Ready to Get Started?</h2>
-    <p style="font-size: 1.2rem; margin-bottom: 30px; color: var(--text-secondary);">
-      Follow these simple steps to deploy the strategy
-    </p>
-
-    <div class="contact-steps">
-        <!-- Registration Form -->
-    <div style="margin-top: 50px;">
-      <h3 class="section-title">Register for Access</h3>
-      <p style="font-size: 1.1rem; margin-bottom: 20px; color: var(--text-secondary);">
-        Fill in your details below to get access to our Option Buying Strategy.
-      </p>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScH09RC8C6lRHz_67pqUM8UKUNat99-pLKlLo0V_DBhKYTmzA/viewform?embedded=true"
-        width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>
-
-    <div class="warning-box" style="margin-top:40px;">
-      <i class="fas fa-info-circle warning-icon"></i>
-      <div>
-      <!-- Step 1 -->
-      <div class="step-card">
-        <div class="step-number">1</div>
-        <h3 style="margin-bottom: 15px;">Sign up with 5paisa</h3>
-        <p style="margin-bottom: 20px; color: var(--text-secondary);">
-          Create your demat account using our sub-broking link for special rates
-        </p>
-        <a href="https://www.5paisa.com/demat-account?ReferralCode=53235502&ReturnUrl=invest-open-account" target="_blank" class="cta-button">
-          <i class="fas fa-external-link-alt"></i> Sign Up Now
-        </a>
-      </div>
-
-      <!-- Step 2 -->
-      <div class="step-card">
-        <div class="step-number">2</div>
-        <h3 style="margin-bottom: 15px;">Contact on Telegram</h3>
-        <p style="margin-bottom: 20px; color: var(--text-secondary);">
-          Message on Telegram for pricing, implementation, and support
-        </p>
-        <a href="https://t.me/Karthi0767" target="_blank" class="cta-button">
-          <i class="fab fa-telegram"></i> @Karthi0767
-        </a>
-      </div>
-
-      <!-- Step 3 -->
-      <div class="step-card">
-        <div class="step-number">3</div>
-        <h3 style="margin-bottom: 15px;">Contact on Telegram</h3>
-        <p style="margin-bottom: 20px; color: var(--text-secondary);">
-          Message on Telegram for pricing, implementation, and support
-        </p>
-        <a href="https://t.me/perumal05" target="_blank" class="cta-button">
-          <i class="fab fa-telegram"></i> @perumal05
-        </a>
-      </div>
-
-      <!-- Step 4 -->
-      <div class="step-card">
-        <div class="step-number">4</div>
-        <h3 style="margin-bottom: 15px;">Join Daily P&L Updates</h3>
-        <p style="margin-bottom: 20px; color: var(--text-secondary);">
-          Stay updated with daily P&L by joining our Telegram group
-        </p>
-        <a href="https://t.me/+RfgS2-85mKtjYmU1" target="_blank" class="cta-button">
-          <i class="fab fa-telegram"></i> Join Group
-        </a>
-      </div>
-    </div>
-
-  
-        <strong>Risk Disclosure:</strong> This is a high-risk, high-reward strategy.
-        Deploy only if you fully understand the risks and have proper risk management in place.
-      </div>
-    </div>
-  </div>
-</section>
-
+        <div class="stat-card"><div class="stat-label">Average Profit per Period</div><div class="
