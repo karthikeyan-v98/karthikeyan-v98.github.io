@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Option Buying Strategy Portfolio</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <style>
     :root {
       --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -18,7 +18,7 @@
     }
 
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
       background: var(--dark-bg);
       color: var(--text-primary);
       line-height: 1.6;
@@ -129,10 +129,10 @@
     }
 
     .metric-card {
-      background: rgba(102,126,234,0.1);
+      background: rgba(102, 126, 234, 0.1);
       border-radius: 15px;
       padding: 20px;
-      border: 1px solid rgba(102,126,234,0.2);
+      border: 1px solid rgba(102, 126, 234, 0.2);
     }
 
     .metric-value {
@@ -155,13 +155,14 @@
       text-align: center;
     }
 
-    th, td {
+    th,
+    td {
       border: 1px solid var(--border-color);
       padding: 12px;
     }
 
     th {
-      background: rgba(102,126,234,0.2);
+      background: rgba(102, 126, 234, 0.2);
     }
 
     /* Stats */
@@ -173,7 +174,7 @@
     }
 
     .stat-card {
-      background: rgba(15,23,42,0.7);
+      background: rgba(15, 23, 42, 0.7);
       border-radius: 15px;
       padding: 20px;
       border: 1px solid var(--border-color);
@@ -214,6 +215,7 @@
       border-radius: 15px;
       border: 1px solid var(--border-color);
       position: relative;
+      margin-bottom: 40px;
     }
 
     .step-number {
@@ -251,6 +253,7 @@
       display: flex;
       align-items: center;
       gap: 15px;
+      flex-direction: column;
     }
 
     .warning-icon {
@@ -284,7 +287,6 @@
   </header>
 
   <main class="container">
-
     <!-- Overview -->
     <section id="overview" class="section">
       <h2 class="section-title">Strategy Overview</h2>
@@ -330,25 +332,61 @@
           </div>
         </div>
 
-        <h3 style="margin-top:30px;">Monthly P&L</h3>
+        <h3 style="margin-top: 30px">Monthly P&L</h3>
         <table>
           <thead>
             <tr>
-              <th>Year</th><th>Jan</th><th>Feb</th><th>Mar</th><th>Apr</th>
-              <th>May</th><th>Jun</th><th>Jul</th><th>Aug</th><th>Sep</th>
-              <th>Oct</th><th>Nov</th><th>Dec</th><th>Total</th><th>Max DD</th>
+              <th>Year</th>
+              <th>Jan</th>
+              <th>Feb</th>
+              <th>Mar</th>
+              <th>Apr</th>
+              <th>May</th>
+              <th>Jun</th>
+              <th>Jul</th>
+              <th>Aug</th>
+              <th>Sep</th>
+              <th>Oct</th>
+              <th>Nov</th>
+              <th>Dec</th>
+              <th>Total</th>
+              <th>Max DD</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>2024</td><td>0</td><td>0</td><td>0</td><td>0</td>
-              <td>0</td><td>0</td><td>0</td><td>0</td><td>14,543</td>
-              <td>41,052</td><td>3,470</td><td>42,280</td><td>1,01,347</td><td>-3,259</td>
+              <td>2024</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>14,543</td>
+              <td>41,052</td>
+              <td>3,470</td>
+              <td>42,280</td>
+              <td>1,01,347</td>
+              <td>-3,259</td>
             </tr>
             <tr>
-              <td>2025</td><td>10,669</td><td>12,902</td><td>17,150</td><td>38,902</td>
-              <td>31,025</td><td>18,318</td><td>10,419</td><td class="loss">-7,655</td>
-              <td>4,442</td><td>0</td><td>0</td><td>0</td><td>1,36,175</td><td>-10,988</td>
+              <td>2025</td>
+              <td>10,669</td>
+              <td>12,902</td>
+              <td>17,150</td>
+              <td>38,902</td>
+              <td>31,025</td>
+              <td>18,318</td>
+              <td>10,419</td>
+              <td class="loss">-7,655</td>
+              <td>4,442</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1,36,175</td>
+              <td>-10,988</td>
             </tr>
           </tbody>
         </table>
@@ -359,17 +397,50 @@
     <section id="stats" class="section">
       <h2 class="section-title">Detailed Statistics</h2>
       <div class="stats-grid">
-        <div class="stat-card"><div class="stat-label">Average Profit per Period</div><div class="stat-value">₹1,946.9</div></div>
-        <div class="stat-card"><div class="stat-label">Average Profit on Winning Periods</div><div class="stat-value">₹4,087.11</div></div>
-        <div class="stat-card"><div class="stat-label">Average Loss on Losing Periods</div><div class="stat-value loss">-₹2,129.69</div></div>
-        <div class="stat-card"><div class="stat-label">Max Profit in Single Period</div><div class="stat-value">₹22,685.15</div></div>
-        <div class="stat-card"><div class="stat-label">Max Loss in Single Period</div><div class="stat-value loss">-₹6,604.45</div></div>
-        <div class="stat-card"><div class="stat-label">Return / MaxDD</div><div class="stat-value">22.04</div></div>
-        <div class="stat-card"><div class="stat-label">Reward to Risk Ratio</div><div class="stat-value">1.92</div></div>
-        <div class="stat-card"><div class="stat-label">Expectancy Ratio</div><div class="stat-value">0.91</div></div>
-        <div class="stat-card"><div class="stat-label">Max Win Streak</div><div class="stat-value">8</div></div>
-        <div class="stat-card"><div class="stat-label">Max Losing Streak</div><div class="stat-value">4</div></div>
-        <div class="stat-card"><div class="stat-label">Max Days in Drawdown</div><div class="stat-value">8</div></div>
+        <div class="stat-card">
+          <div class="stat-label">Average Profit per Period</div>
+          <div class="stat-value">₹1,946.9</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Average Profit on Winning Periods</div>
+          <div class="stat-value">₹4,087.11</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Average Loss on Losing Periods</div>
+          <div class="stat-value loss">-₹2,129.69</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Max Profit in Single Period</div>
+          <div class="stat-value">₹22,685.15</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Max Loss in Single Period</div>
+          <div class="stat-value loss">-₹6,604.45</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Return / MaxDD</div>
+          <div class="stat-value">22.04</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Reward to Risk Ratio</div>
+          <div class="stat-value">1.92</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Expectancy Ratio</div>
+          <div class="stat-value">0.91</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Max Win Streak</div>
+          <div class="stat-value">8</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Max Losing Streak</div>
+          <div class="stat-value">4</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Max Days in Drawdown</div>
+          <div class="stat-value">8</div>
+        </div>
       </div>
     </section>
 
@@ -409,39 +480,35 @@
           Follow these simple steps to deploy the strategy
         </p>
 
+        <!-- Registration Form -->
+        <div style="margin-top: 50px">
+          <h3 class="section-title">Register for Access</h3>
+          <p style="font-size: 1.1rem; margin-bottom: 20px; color: var(--text-secondary);">
+            Fill in your details below to get access to our Option Buying Strategy.
+          </p>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScH09RC8C6lRHz_67pqUM8UKUNat99-pLKlLo0V_DBhKYTmzA/viewform?embedded=true"
+            width="100%"
+            height="900"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+          >
+            Loading…
+          </iframe>
+        </div>
+
+        <!-- Steps -->
         <div class="contact-steps">
-          <!-- Registration Form -->
-          <div style="margin-top: 50px;">
-            <h3 class="section-title">Register for Access</h3>
-            <p style="font-size: 1.1rem; margin-bottom: 20px; color: var(--text-secondary);">
-              Fill in your details below to get access to our Option Buying Strategy.
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>Sign up with 5paisa</h3>
+            <p style="color: var(--text-secondary)">
+              Create your demat account using our sub-broking link for special rates
             </p>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScH09RC8C6lRHz_67pqUM8UKUNat99-pLKlLo0V_DBhKYTmzA/viewform?embedded=true"
-              width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-          </div>
-
-          <div class="warning-box" style="margin-top:40px;">
-            <i class="fas fa-info-circle warning-icon"></i>
-            <div>
-              <!-- Step 1 -->
-              <div class="step-card">
-                <div class="step-number">1</div>
-                <h3 style="margin-bottom: 15px;">Sign up with 5paisa</h3>
-                <p style="margin-bottom: 20px; color: var(--text-secondary);">
-                  Create your demat account using our sub-broking link for special rates
-                </p>
-                <a href="https://www.5paisa.com/demat-account?ReferralCode=53235502&ReturnUrl=invest-open-account"
-                   target="_blank" class="cta-button">
-                  <i class="fas fa-external-link-alt"></i> Sign Up Now
-                </a>
-              </div>
-
-              <!-- Step 2 -->
-              <div class="step-card">
-                <div class="step-number">2</div>
-                <h3 style="margin-bottom: 15px;">Contact on Telegram</h3>
-                <p style="margin-bottom: 20px; color: var(--text-secondary);">
-                  Message on Telegram for pricing, implementation, and support
-                </p>
-                <a href="https://t.me/Karthi0767" target="_blank" class="cta-button">
-                  <i class="fab fa-
+            <a
+              href="https://www.5paisa.com/demat-account?ReferralCode=53235502&ReturnUrl=invest-open-account"
+              target="_blank"
+              class="cta-button"
+            >
+             
